@@ -47,14 +47,6 @@ public class Login extends JFrame implements ActionListener {//all those classes
 		pfpinnumber.setBounds(300,165,230,30);
 		pfpinnumber.setFont(new Font("Tahoma",Font.BOLD,20));
 		add(pfpinnumber);	
-		setTitle("Bank Management System");//this will be the name of the frame which will be created
-		
-		
-		//Changing the background 
-		getContentPane().setBackground(Color.white); 
-		setVisible(true);
-		setSize(800,500);//units in pixels
-		setLocation(400,200);
 		
 		btnlogin= new JButton("Login");
 		btnlogin.setBackground(Color.black);
@@ -82,6 +74,16 @@ public class Login extends JFrame implements ActionListener {//all those classes
 		btnlogin.addActionListener(this);
 		btnClear.addActionListener(this);
 		btnSignup.addActionListener(this);
+		//TITLE
+		setTitle("Bank Management System");//this will be the name of the frame which will be created
+		
+		
+		//Changing the background 
+		getContentPane().setBackground(Color.white); 
+		setVisible(true);
+		setSize(800,500);//units in pixels
+		setLocation(400,200);
+		
 	}
    
 	public static void main(String[] args) {
